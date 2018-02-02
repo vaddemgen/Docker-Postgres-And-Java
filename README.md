@@ -1,4 +1,4 @@
-# Docker-Postgres-And-Java
+# Docker, Postgres and Java
 
 - Create Docker Compose file anywere:
 
