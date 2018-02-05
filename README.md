@@ -8,22 +8,22 @@
 
 ```yml
 version: '3'
-    services:
-        db:
-            container_name: projectname-postgres
-            image: postgres:latest
-            environment:
-                POSTGRES_DB: projectnameDB
-                POSTGRES_USER: projectnameUser
-                POSTGRES_PASSWORD: MDNmODNmMDg5MjliMjMxZjdkOGI5ZTZhMGQxZGQ0
-                LC_ALL: C.UTF-8
-        pgadmin:
-            container_name: projectname-pgadmin
-            image: thajeztah/pgadmin4:latest
-            ports:
-                - "5050:5050"
-            links:
-                - db
+services:
+  db:
+      container_name: projectname-postgres
+      image: postgres:latest
+      environment:
+          POSTGRES_DB: projectnameDB
+          POSTGRES_USER: projectnameUser
+          POSTGRES_PASSWORD: MDNmODNmMDg5MjliMjMxZjdkOGI5ZTZhMGQxZGQ0
+          LC_ALL: C.UTF-8
+  pgadmin:
+      container_name: projectname-pgadmin
+      image: thajeztah/pgadmin4:latest
+      ports:
+          - "5050:5050"
+      links:
+          - db
 ```
 
 - Create and start containers:
