@@ -68,4 +68,4 @@ services:
         
  - If you need to import DB dump, follow this step:
 
-        docker exec -u postgres -i projectname-postgres psql projectnameDB < /path/to/your/local/dump.sql
+        docker exec -u postgres -i projectname-postgres sh -c 'psql $POSTGRES_DB' < /path/to/your/local/dump.sql
